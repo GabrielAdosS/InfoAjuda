@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. WhatsApp: Enviando e apagando mensagens</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button class="btn_header open" id="btn_header" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo">
+            <img src="../img/logo-infoAjuda.svg" alt="">
+        </div>
+        <div class="navigation" id="navigation">
+            <button class="btn_header" id="btn_header" onclick="openSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+            </button>
+            <a href="../index.html" class="ancora_header">Página Inicial</a>
+            <a href="videos.html" class="ancora_header">Galeria de Vídeos</a>
+        </div>
+    </div>
+    <main class="cor">
+        <br><br><br>
+
+        <div class="container">
+            <div class="main-video">
+                <div class="video">
+                    <video src="../videos/Mandar e apagar mensagem no WPP.mp4" controls muted autoplay></video>
+                    <h3 class="title">05. WhatsApp: Enviando e apagando mensagens</h3>
+                    <br>
+                </div>
+            </div>
+
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="../videos/Criando Alarme.mp4" controls muted autoplay></video>
+                    <h3 class="title">01. Como criar alarme</h3>
+                </div>
+                <div class="vid">
+                    <video src="../videos/Criando contato e apagando.mp4" controls muted autoplay></video>
+                    <h3 class="title">02. Criando e apagando contato</h3>
+                </div>
+                <div class="vid">
+                    <video src="../videos/Criando email.mp4" controls muted autoplay></video>
+                    <h3 class="title">03. Criando e-mail</h3>
+                </div>
+                <div class="vid">
+                    <video src="../videos/Instalando e desinstalando apps.mp4" controls muted autoplay></video>
+                    <h3 class="title">04. Instalando e desinstalando aplicativos</h3>
+                </div>
+                <div class="vid">
+                    <video src="../videos/Mandar e apagar mensagem no WPP.mp4" controls muted autoplay></video>
+                    <h3 class="title">05. WhatsApp: Enviando e apagando mensagens</h3>
+                </div>
+                <div class="vid">
+                    <video src="../videos/ligacao.mp4" controls muted autoplay></video>
+                    <h3 class="title">06. Realizando chamada comum e de vídeo no WhatsApp</h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            let listVideo = document.querySelectorAll('.video-list .vid');
+            let mainVideo = document.querySelector('.main-video video');
+            let title = document.querySelector('.main-video .title');
+
+            listVideo.forEach(video => {
+                video.onclick = () => {
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+                    video.classList.add('active');
+                    if (video.classList.contains('active')) {
+                        let src = video.children[0].getAttribute('src');
+                        mainVideo.src = src;
+                        let text = video.children[1].innerHTML;
+                        title.innerHTML = text;
+                    };
+                }
+            })
+        </script>
+    <br><br><br>
+    </main>
+    <div class="footer" id="footer">
+        <div class="row">
+            <div class="card_left">
+                <img src="../img/logo-infoAjuda.svg" alt="logo">
+                <p>
+                    Projeto desenvolvido por alunos do 3°A de informática para a internet
+                </p>
+            </div>
+            <div class="card_center"></div>
+            <div class="card_right">
+                <h2>desenvolvedores</h2>
+                <ul>
+                    <li>Eduardo Tebexerini</li>
+                    <li>Gabriel Antonio</li>
+                    <li>Igor Gabriel</li>
+                    <li>Lucas Henrique</li>
+                    <li>Vinicius Caetano</li>
+                </ul>
+            </div>
+        </div>
+        <h3>&copy; 2023 por InfoAjuda</h3>
+    </div>
+</body>
+<script src="../javascript/java.js"></script>
+
+</html>

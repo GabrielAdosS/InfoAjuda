@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infoAjuda</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button class="btn_header open" id="btn_header" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo">
+            <img src="./img/logo-infoAjuda.svg" alt="">
+        </div>
+        <div class="navigation" id="navigation">
+            <button class="btn_header" id="btn_header" onclick="openSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+            </button>
+            <a href="#" class="ancora_header">Página Inicial</a>
+            <a href="./paginas/videos.html" class="ancora_header">Galeria de Vídeos</a>
+        </div>
+    </div>
+    <main>
+        <div class="banner" id="banner" onclick="closeSidebar()" tabindex="0">
+            <div class="quadrado">
+                <h1>Descubra possibilidades na palma das mãos</h1>
+                <p>Aprenda a utilizar a tecnologia para aprimorar seu dia a dia e desfrutar de novas experiências.</p>
+            </div>
+        </div>
+        <div class="section2" id="section2" onclick="closeSidebar()" tabindex="0">
+            <div class="content">
+              <h1>Sobre o Mini Curso</h1>
+              <p class="text">Bem-vindo ao nosso mini curso especializado para idosos na terceira idade! Ao longo de 6 vídeos informativos, iremos guiá-lo no aprendizado das funções básicas do seu celular. Nosso objetivo é tornar a tecnologia mais acessível e ajudar você a aproveitar todas as vantagens que o mundo digital oferece.</p>
+              <p class="text">Em cada vídeo, abordaremos tópicos essenciais, como fazer chamadas, enviar mensagens, tirar fotos, navegar na internet e utilizar aplicativos populares. Nossos instrutores experientes estão preparados para explicar passo a passo, garantindo que você compreenda e se sinta confortável com cada funcionalidade.</p>
+              <p class="text">Sabemos que aprender algo novo pode parecer desafiador, mas estamos aqui para tornar esse processo agradável e gratificante. Através dos nossos vídeos interativos, você terá a oportunidade de praticar e aplicar os conhecimentos adquiridos, reforçando sua confiança no uso do celular.</p>
+              <p class="text">Além disso, forneceremos materiais de apoio e recursos adicionais para que você possa revisar e praticar sempre que quiser. Nossa equipe estará disponível para responder a dúvidas e oferecer suporte durante todo o curso, garantindo que você se sinta apoiado em sua jornada de aprendizado.</p>
+              <p class="text">Então, não perca mais tempo e junte-se a nós neste mini curso para idosos na terceira idade. Descubra como o seu celular pode se tornar uma ferramenta poderosa para se conectar com familiares, encontrar informações úteis e explorar novas oportunidades.</p>
+              <p class="text">Estamos ansiosos para embarcar nesta jornada educativa com você. Vamos começar a explorar o mundo digital juntos!</p>
+            </div>
+                <div class="c1">
+                  <h1>Os tutoriais</h1>
+                  <br>
+                  <p id="txt_c1">Nossos tutoriais tem como base o Android!</p>
+                  <br>
+                  <div class="elements">
+                    <div class="card">
+                      <img class="foto" src="img/android.png" alt="ANDROIDIII">
+                      <h3>Android</h3>
+                      <div class="descricao">
+                        <p>Celulares Android são os mais utilizados, por isso, os tutoriais foram gravados em um celular Android! Ainda assim, alguns tutoriais podem servir para usuários de Iphone etc.</p>
+                      </div>
+                    </div>
+                    <!-- Adicione aqui os outros elementos de conteúdo -->
+                  </div>
+                </div>
+          </div>          
+    </main>
+    <main>
+        <div class="section3" id="section3" onclick="closeSidebar()" tabindex="0">
+        <div class="center">
+            <h1>Vídeo introdutório</h1>
+            <div class="videoo">
+                <video controls>
+                    <source src="./videos/intro.mp4" type="video/mp4">
+                </video>
+                <p>Com dificuldades? Não se preocupe, aqui temos respostas. 
+                    Por isso, preparamos esse vídeo introdutório, que vai te ajudar a utlizar nosso próprio site! Legal né?
+                </p>
+            </div>
+        </div>
+        </div>
+    </main>
+        <div class="footer" id="footer">
+            <div class="row">
+                <div class="card_left">
+                    <img src="./img/logo-infoAjuda.svg" alt="logo">
+                    <p>
+                        Projeto desenvolvido por alunos do 3°A de informática para a internet
+                    </p>
+                </div>
+                <div class="card_center"></div>
+                <div class="card_right">
+                    <h2>desenvolvedores</h2>
+                    <ul>
+                        <li>Eduardo Tebexerini</li>
+                        <li>Gabriel Antonio</li>
+                        <li>Igor Gabriel</li>
+                        <li>Lucas Henrique</li>
+                        <li>Vinicius Caetano</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>&copy;2023 por InfoAjuda</h3>
+        </div>
+</body>
+<script src="./javascript/java.js"></script>
+
+</html>
