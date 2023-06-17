@@ -34,10 +34,10 @@
             <a href="videos.html" class="ancora_header">Galeria de Vídeos</a>
         </div>
     </div>
-    <main class="cor">
+    <main class="cor" id="cor" onclick="closeSidebar()" tabindex="0">
         <br><br><br>
 
-        <div class="container">
+        <div class="container" id="container" onclick="closeSidebar()" tabindex="0">
             <div class="main-video">
                 <div class="video">
                     <video src="../videos/Criando Alarme.mp4" controls muted autoplay></video>
@@ -96,7 +96,7 @@
         </script>
     <br><br><br>
     </main>
-    <div class="footer" id="footer">
+    <div class="footer" id="footer" onclick="closeSidebar()" tabindex="0">
         <div class="row">
             <div class="card_left">
                 <img src="../img/logo-infoAjuda.svg" alt="logo">
@@ -119,6 +119,6 @@
         <h3>&copy; 2023 por InfoAjuda</h3>
     </div>
 </body>
-<script src="../javascript/java.js"></script>
+<script src="../javascript/java_video.js"></script>
 
 </html>

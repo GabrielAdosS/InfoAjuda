@@ -1,10 +1,9 @@
 var button = document.getElementById('btn_header');
 var header = document.getElementById('header');
 var navigation = document.getElementById('navigation');
-var banner = document.getElementById('banner');
-var section2 = document.getElementById('section2');
-var section3 = document.getElementById('section3');
-var footer = document.getElementById('footer');
+var main = document.getElementById('cor');
+var footer =document.getElementById('footer');
+var container = document.getElementById('container');
 var sidebar = false;
 
 function openSidebar() {
@@ -12,16 +11,12 @@ function openSidebar() {
     if (sidebar) {
         navigation.style.marginLeft = '-70vw';
         navigation.style.animationName = 'openSidebar';
-        banner.style.filter = 'blur(2px)';
-        section2.style.filter = 'blur(2px)';
-        section3.style.filter = 'blur(2px)';
+        main.style.filter = 'blur(2px)';
         footer.style.filter = 'blur(2px)';
     } else {
         navigation.style.marginLeft = '-135vw';
         navigation.style.animationName = 'closeSidebar';
-        banner.style.filter = '';
-        section2.style.filter = '';
-        section3.style.filter = '';
+        main.style.filter = '';
         footer.style.filter = '';
     }
 }
