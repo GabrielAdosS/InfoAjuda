@@ -121,6 +121,7 @@ p:first-letter {
     height: 270px;
     width: 500px;
     padding: 50px 20px 10px 20px;
+    border-radius: 2.5px;
 }
 .banner .quadrado h1 {
     margin-bottom: 35px;
@@ -308,6 +309,7 @@ main {
     margin: 0px 15px;
     background-color: var(--branco);
     padding: 40px 20px 0px;
+    transition-delay: 0.3s;
 }
 
 .linha {
